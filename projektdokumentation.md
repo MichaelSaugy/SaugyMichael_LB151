@@ -64,7 +64,7 @@ Es wird eine MySql Datenbank verwendet (was ist mit Interface gemeint)
 | 15   |                 |      | Als Kandidat möchte ich, dass die Runden gezählt werden, damit ich weis in welcher Runde ich mich befinde.                                   |
 | A   |                 |      | Als Kandidat möchte ich, die Schwierigkeit der Wörter/Phrasen ändern können, damit ich auf einem mir angemessenen Niveau spielen kann.                                   |
 | B   |                 |      | Als Kandidat möchte ich eine Hilfe-Funktion haben, die mir ermöglicht, Hinweise oder Tipps zu einer Frage oder einem Rätsel zu erhalten, damit ich das Rätsel besser lösen kann. |
-| C   |                 |      | Als Kandidat möchte ich eine Funktion haben, um eine Frage oder ein Rätsel zu melden, falls ich denke, dass es falsch oder unangemessen ist, damit ich dazu beitragen kann, die Qualität der Rätsel zu verbessern. |
+| C   |                 |      | Als Kandidat möchte ich eine Funktion haben, um ein Rätsel zu melden, falls ich denke, dass es sich um einen Schreibfehler handelt, damit ich dazu beitragen kann, die Qualität der Rätsel zu verbessern. |
 | D   |                 |      | Als Administrator möchte ich eine Funktion haben um die Statistiken der einzelnen Rätsel anzuzeigen, damit ich erfahre welche Rätsel besonders schwer oder leicht sind und anpassen kann. |
 
 ✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc. oder Zahl), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). 
