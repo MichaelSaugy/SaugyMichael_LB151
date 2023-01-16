@@ -1,11 +1,11 @@
 # Projekt-Dokumentation
 
-✍️ Ihr Nachname
+Saugy
 
 | Datum | Version | Zusammenfassung                                              |
 | ----- | ------- | ------------------------------------------------------------ |
-|       | 0.0.1   | Erstellen und Ausfüllender Dokumentation bis Punkt 4 |
-|       | 0.0.2   |                                                              |
+| 12.01.2023      | 0.0.1   | Erstellen und Ausfüllen der Dokumentation bis Punkt 4.1 |
+| 16.01.2023      | 0.0.2   | Überarbeiten der Punkte bis 4.1 und ausfüllen der Dokumentation bis 5 |
 |       | 0.0.3   |                                                              |
 |       | 0.0.4   |                                                              |
 |       | 0.0.5   |                                                              |
@@ -15,6 +15,7 @@
 # 0 Ihr Projekt
 
 ✍️ Beschreiben Sie Ihr Projekt in einem griffigen Satz.
+
 Ein Quiz, bei welchem man ein Wort oder ein Satz erraten muss.
 
 # 1 Analyse
@@ -29,11 +30,14 @@ Ein Quiz, bei welchem man ein Wort oder ein Satz erraten muss.
 # 2 Technologie
 
 ✍️ Beschreiben Sie für dieselben Tiers, welche Programmiersprache bzw. Technologie Sie verwenden möchten.
-JSF & MySql
+
+JSF & MySql, da wir mit diese im Unterricht behandeln
 
 # 3 Datenbank
 
 ✍️ Wie steuern Sie Ihre Datenbank an? Wie ist das Interface aufgebaut? 
+
+Es wird eine MySql Datenbank verwendet (was ist mit Interface gemeint)
 
 # 4.1 User Stories
 
@@ -58,6 +62,10 @@ JSF & MySql
 | 13   |                 |      | Als Kandidat möchte ich jederzeit das Spiel beenden und meinen Gewinn in die Highscore-Liste übernehmen können, damit ich meine Leistungen aufzeichnen kann. |
 | 14   |                 |      | Als Administrator möchte ich das das Spiel mit genügend Wörter und Phrasen gefüllt ist, damit der Kandidat Spass hat                                   |
 | 15   |                 |      | Als Kandidat möchte ich, dass die Runden gezählt werden, damit ich weis in welcher Runde ich mich befinde.                                   |
+| A   |                 |      | Als Kandidat möchte ich, die Schwierigkeit der Wörter/Phrasen ändern können, damit ich auf einem mir angemessenen Niveau spielen kann.                                   |
+| B   |                 |      | Als Kandidat möchte ich eine Hilfe-Funktion haben, die mir ermöglicht, Hinweise oder Tipps zu einer Frage oder einem Rätsel zu erhalten, damit ich das Rätsel besser lösen kann. |
+| C   |                 |      | Als Kandidat möchte ich eine Funktion haben, um eine Frage oder ein Rätsel zu melden, falls ich denke, dass es falsch oder unangemessen ist, damit ich dazu beitragen kann, die Qualität der Rätsel zu verbessern. |
+| D   |                 |      | Als Administrator möchte ich eine Funktion haben um die Statistiken der einzelnen Rätsel anzuzeigen, damit ich erfahre welche Rätsel besonders schwer oder leicht sind und anpassen kann. |
 
 ✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc. oder Zahl), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). 
 
