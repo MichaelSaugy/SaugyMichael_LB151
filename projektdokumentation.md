@@ -100,6 +100,8 @@ Es wird eine MySql Datenbank verwendet (was ist mit Interface gemeint)
 # 5 Prototyp
 
 ✍️ Erstellen Sie Prototypen für das GUI (Admin-Interface und Quiz-Seite).
+![image](https://user-images.githubusercontent.com/69577552/214911329-47396850-8da1-4c8f-9405-e8fa94ad6dc5.png)
+
 
 # 6 Implementation
 
