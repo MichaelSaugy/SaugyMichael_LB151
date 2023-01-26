@@ -52,7 +52,7 @@ Es wird eine MySql Datenbank verwendet (was ist mit Interface gemeint)
 | 3    |                 |      | Als Administrator möchte ich Kategorien anlegen und jedes Wort bzw. jede Frage einer Kategorie zuordnen können, damit ich die Rätsel und Fragen verwalten kann und der Nutzer weis, um was es geht                                   |
 | 4    |                 |      | Als Client dient ein Webbrowser. |
 | 5    |                 |      | Als Kandidat möchte ich meinen Namen eingeben und auf der Highscore-Liste erscheinen können, damit ich meine Leistungen mit anderen teilen kann.                                   |
-| 6    |                 |      | Als Kandidat möchte ich jederzeit meinen Kontostand und meine Lebenspunkte sehen können, damit ich den Fortschritt des Spiels verfolgen kann.                                   |
+| 6    |                 |      | Als Kandidat möchte ich jederzeit meinen Kontostand sehen können, damit ich den Fortschritt des Spiels verfolgen kann.                                   |
 | 7    |                 |      | Als Kandidat möchte ich jederzeit meinen Lebenspunkte sehen können, damit ich den Fortschritt des Spiels verfolgen kann.                                   |
 | 8    |                 |      | Als Kandidat möchte ich erfahren, ob meine Antwort richtig oder falsch war, damit ich mein Wissen verbessern kann und beim nächste Mal besser bin.                                   |
 | 9    |                 |      | Als Kandidat möchte ich jederzeit das Spiel beenden und meinen Gewinn in die Highscore-Liste übernehmen können, damit ich meine Leistungen aufzeichnen kann.                                   |
@@ -73,7 +73,26 @@ Es wird eine MySql Datenbank verwendet (was ist mit Interface gemeint)
 
 | TC-№ | Vorbereitung | Eingabe | Erwartete Ausgabe |
 | ---- | ------------ | ------- | ----------------- |
-| 1.1  |              |         |                   |
+| 1.1  | Admin Account erstellt             | Name und Paswort        | Anzeigen der Administratorfuktionen                  |
+| 2.2  | Als Admin einloggen             | Neues Rätsel hinzufügen        | Rätsel wird der Tabelle "Raetsel" hinzugefügt                  |
+| 3.3  | Als Admin einloggen             | Kategorie hinzufügen        | Kategorie wird der DB hinzugefügt                  |
+| 3.3  | Kategorie erstellen             | Rätsel einer Kategorie hinzufügen        | In der DB ersichtliche Verbindung von Rätsel und Kategorie                  |
+| 4.4  |              |         |                   |
+| 5.5  | Seite aufrufen             | "Test" als Namen eingeben und das Spiel spielen        | Am Ende wird der Kontostand gemeinsam mit dem Namen gespeichert                   |
+| 6.6  | Seite aufrufen             | "Test" als Namen eingeben und das Spiel starten         | Oben rechts sind die Lebenspunkte ersichtlich                  |
+| 7.7  | Seite aufrufen             | "Test" als Namen eingeben und das Spiel starten         | Oben rechts ist der Kontostand ersichtlich                  |
+| 8.8  | Seite aufrugen und Spiel mit beliebigem Namen starten             | 1. Rätsel falsch beantowrten und das 2. richtig        | 1. Rätsel wird korrigiert                  |
+| 9.9  | Seite aufrugen und Spiel mit beliebigem Namen starten             | Einige Rätsel spielen und dann beenden        | Kontostand wird auf die Highscoreliste übertragen                  |
+| 10.10  |              |         |                   |
+| 11.11  |              |         |                   |
+| 12.12  |              |         |                   |
+| 13.13  |              |         |                   |
+| 14.14  |              |         |                   |
+| 15.15  |              |         |                   |
+| A.16  |              |         |                   |
+| B.17  |              |         |                   |
+| C.18  |              |         |                   |
+| D.19  |              |         |                   |
 | ...  |              |         |                   |
 
 ✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, die der Testfall abdeckt, und `m` von `1` an nach oben gezählt. Beispiel: Der dritte Testfall, der die zweite User Story abdeckt, hat also die Nummer `2.3`.
