@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.CreatePhrasesTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="#{bundle.CreatePhrasesLabel_id}" for="id" />
+                    <h:inputText id="id" value="#{phrasesController.selected.id}" title="#{bundle.CreatePhrasesTitle_id}" required="true" requiredMessage="#{bundle.CreatePhrasesRequiredMessage_id}"/>
+                    <h:outputLabel value="#{bundle.CreatePhrasesLabel_phrase}" for="phrase" />
+                    <h:inputText id="phrase" value="#{phrasesController.selected.phrase}" title="#{bundle.CreatePhrasesTitle_phrase}" required="true" requiredMessage="#{bundle.CreatePhrasesRequiredMessage_phrase}"/>
+                    <h:outputLabel value="#{bundle.CreatePhrasesLabel_timesFailed}" for="timesFailed" />
+                    <h:inputText id="timesFailed" value="#{phrasesController.selected.timesFailed}" title="#{bundle.CreatePhrasesTitle_timesFailed}" required="true" requiredMessage="#{bundle.CreatePhrasesRequiredMessage_timesFailed}"/>
+                    <h:outputLabel value="#{bundle.CreatePhrasesLabel_idCategory}" for="idCategory" />
+                    <h:selectOneMenu id="idCategory" value="#{phrasesController.selected.idCategory}" title="#{bundle.CreatePhrasesTitle_idCategory}" required="true" requiredMessage="#{bundle.CreatePhrasesRequiredMessage_idCategory}">
+                        <f:selectItems value="#{categoryController.itemsAvailableSelectOne}"/>
+                    </h:selectOneMenu>
+                    <h:outputLabel value="#{bundle.CreatePhrasesLabel_idDifficulty}" for="idDifficulty" />
+                    <h:selectOneMenu id="idDifficulty" value="#{phrasesController.selected.idDifficulty}" title="#{bundle.CreatePhrasesTitle_idDifficulty}" required="true" requiredMessage="#{bundle.CreatePhrasesRequiredMessage_idDifficulty}">
+                        <f:selectItems value="#{difficultyController.itemsAvailableSelectOne}"/>
+                    </h:selectOneMenu>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{phrasesController.create}" value="#{bundle.CreatePhrasesSaveLink}" />
+                <br />
+                <br />
+                <h:commandLink action="#{phrasesController.prepareList}" value="#{bundle.CreatePhrasesShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.CreatePhrasesIndexLink}"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

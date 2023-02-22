@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.ViewPhrasesTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputText value="#{bundle.ViewPhrasesLabel_id}"/>
+                    <h:outputText value="#{phrasesController.selected.id}" title="#{bundle.ViewPhrasesTitle_id}"/>
+                    <h:outputText value="#{bundle.ViewPhrasesLabel_phrase}"/>
+                    <h:outputText value="#{phrasesController.selected.phrase}" title="#{bundle.ViewPhrasesTitle_phrase}"/>
+                    <h:outputText value="#{bundle.ViewPhrasesLabel_timesFailed}"/>
+                    <h:outputText value="#{phrasesController.selected.timesFailed}" title="#{bundle.ViewPhrasesTitle_timesFailed}"/>
+                    <h:outputText value="#{bundle.ViewPhrasesLabel_idCategory}"/>
+                    <h:outputText value="#{phrasesController.selected.idCategory}" title="#{bundle.ViewPhrasesTitle_idCategory}"/>
+                    <h:outputText value="#{bundle.ViewPhrasesLabel_idDifficulty}"/>
+                    <h:outputText value="#{phrasesController.selected.idDifficulty}" title="#{bundle.ViewPhrasesTitle_idDifficulty}"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{phrasesController.destroyAndView}" value="#{bundle.ViewPhrasesDestroyLink}"/>
+                <br />
+                <br />
+                <h:link outcome="Edit" value="#{bundle.ViewPhrasesEditLink}"/>
+                <br />
+                <h:commandLink action="#{phrasesController.prepareCreate}" value="#{bundle.ViewPhrasesCreateLink}" />
+                <br />
+                <h:commandLink action="#{phrasesController.prepareList}" value="#{bundle.ViewPhrasesShowAllLink}"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.ViewPhrasesIndexLink}"/>
+
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

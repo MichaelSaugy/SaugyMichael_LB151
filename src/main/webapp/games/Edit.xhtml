@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.EditGamesTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="#{bundle.EditGamesLabel_id}" for="id" />
+                    <h:inputText id="id" value="#{gamesController.selected.id}" title="#{bundle.EditGamesTitle_id}" required="true" requiredMessage="#{bundle.EditGamesRequiredMessage_id}"/>
+                    <h:outputLabel value="#{bundle.EditGamesLabel_name}" for="name" />
+                    <h:inputText id="name" value="#{gamesController.selected.name}" title="#{bundle.EditGamesTitle_name}" required="true" requiredMessage="#{bundle.EditGamesRequiredMessage_name}"/>
+                    <h:outputLabel value="#{bundle.EditGamesLabel_balance}" for="balance" />
+                    <h:inputText id="balance" value="#{gamesController.selected.balance}" title="#{bundle.EditGamesTitle_balance}" required="true" requiredMessage="#{bundle.EditGamesRequiredMessage_balance}"/>
+                    <h:outputLabel value="#{bundle.EditGamesLabel_start}" for="start" />
+                    <h:inputText id="start" value="#{gamesController.selected.start}" title="#{bundle.EditGamesTitle_start}" />
+                    <h:outputLabel value="#{bundle.EditGamesLabel_end}" for="end" />
+                    <h:inputText id="end" value="#{gamesController.selected.end}" title="#{bundle.EditGamesTitle_end}" />
+                </h:panelGrid>
+                <h:commandLink action="#{gamesController.update}" value="#{bundle.EditGamesSaveLink}"/>
+                <br />
+                <br />
+                <h:link outcome="View" value="#{bundle.EditGamesViewLink}"/>
+                <br />
+                <h:commandLink action="#{gamesController.prepareList}" value="#{bundle.EditGamesShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.EditGamesIndexLink}" />
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>
