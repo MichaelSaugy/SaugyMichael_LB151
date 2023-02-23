@@ -59,9 +59,10 @@ Es wird eine MySql Datenbank verwendet (was ist mit Interface gemeint)
 | 10   | Muss                |      | Als Kandidat möchte ich Rang, Name des Spielers, Zeitpunkt des Spiels, Geldbetrag und Anzahl der Spielrunden sehen, damit ich mich mit anderen Kandidaten vergleichen kann.                                   |
 | 11   | Muss                |      | Als Kandidat möchte ich, dass die Rangliste nach der höhe des Geldbetrags sortiert wird, damit ich eine bessere übersicht habe.                                    |
 | 12   | Muss                |      | Als Kandidat (Admin?) möchte ich jedes Rätsel-Wort oder Phrase nur einmal erhalten, damit das Spiel spannend bleibt.                                    |
-| 13   | Muss                |      | Als Kandidat möchte ich jederzeit das Spiel beenden und meinen Gewinn in die Highscore-Liste übernehmen können, damit ich meine Leistungen aufzeichnen kann. |
+| 13   | Muss                |      | Als Kandidat möchte ich das Glücksrad drehen können, damit ich um einen Betrag spielen kann ---------- |
 | 14   | Muss                |      | Als Administrator möchte ich das das Spiel mit genügend Wörter und Phrasen gefüllt ist, damit der Kandidat Spass hat                                   |
 | 15   | Muss                |      | Als Kandidat möchte ich, dass die Runden gezählt werden, damit ich weis in welcher Runde ich mich befinde.                                   |
+| 16   | Muss                |      | Als Kandiddat möchte ich durch Raten eines KOnsonanten den Betrag gewinnen, damit ich einen Gewinn erzielen kann                                   |
 | A   | Kann                |      | Als Kandidat möchte ich, die Schwierigkeit der Wörter/Phrasen ändern können, damit ich auf einem mir angemessenen Niveau spielen kann.                                   |
 | B   | Kann                |      | Als Kandidat möchte ich eine Hilfe-Funktion haben, die mir ermöglicht, Hinweise oder Tipps zu einer Frage oder einem Rätsel zu erhalten, damit ich das Rätsel besser lösen kann. |
 | C   | Kann                |      | Als Kandidat möchte ich eine Funktion haben, um ein Rätsel zu melden, falls ich denke, dass es sich um einen Schreibfehler handelt, damit ich dazu beitragen kann, die Qualität der Rätsel zu verbessern. |
@@ -108,10 +109,10 @@ Es wird eine MySql Datenbank verwendet (was ist mit Interface gemeint)
 
 | User Story | Datum | Beschreibung |
 | ---------- | ----- | ------------ |
-| ...        |       |              |
-| ...        |       |              |
-| ...        |       |              |
-| ...        |       |              |
+| 2,3,4,6,7,13        | 13.02.2023      |              |
+| 5,8,16        | 21.02.2023      |              |
+| 9,10,11        | 22.02.2023      |              |
+| 14        | 23.20.2023      | DB befüllt             |
 | ...        |       |              |
 | ...        |       |              |
 
