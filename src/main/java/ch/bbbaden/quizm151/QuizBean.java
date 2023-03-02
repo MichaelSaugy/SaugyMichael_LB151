@@ -224,7 +224,7 @@ public class QuizBean implements Serializable {
             boolean consonantLeft = false;
             for (QuizLetter letter : letters) {
                 if (Character.toLowerCase(letter.getValue()) == consonants.charAt(i)) {
-                    if(letter.isHidden()){
+                    if (letter.isHidden()) {
                         consonantLeft = true;
                     }
                 }
@@ -265,6 +265,7 @@ public class QuizBean implements Serializable {
     private void wordGuessed() {
         wordGuessed = true;
         System.out.println("Wort erraten!");
+        FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Du hast das Rätsel gelöst!", "Du hast das Rätsel gelöst!"));
         answerGrid = solution;
     }
 
@@ -280,6 +281,8 @@ public class QuizBean implements Serializable {
         lives--;
         if (lives == 0) {
             System.out.println("Verloren!!");
+            FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Du hast verloren! Die Antwort war " + solution, "Du hast verloren! Die Antwort war " + solution));
+
             try {
                 db.updateTimesFailed(id_phrase);
                 restart();

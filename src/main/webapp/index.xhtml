@@ -1,19 +1,27 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html">
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
     <h:head>
         <title>Facelet Title</title>
         <h:outputStylesheet name="css/jsfcrud.css"/>
     </h:head>
     <h:body>
-        <h:form>
-            <h1>Quiz</h1>
-            <p>Name: <h:inputText value="#{QuizBean.username}" />
-                <h:commandButton action="quiz/mainQuiz.xhtml" value="Jetzt spielen"/></p>
-            <br/>
-            <h:commandLink action="quiz/adminLogin.xhtml" value="Als Admin anmelden"/>
-        </h:form>
+        <ui:composition template="Template/template.xhtml">
+
+            <ui:define name="content">
+                <h:form>
+                    <h1>Start</h1>
+                    <p>Name: <h:inputText value="#{QuizBean.username}" />
+                        <h:commandButton action="quiz/mainQuiz.xhtml" value="Jetzt spielen"/></p>
+                    <br/>
+                    <h:commandLink action="quiz/adminLogin.xhtml" value="Als Admin anmelden"/>
+                </h:form>
+            </ui:define>
+
+        </ui:composition>
+
     </h:body>
 </html>
 
