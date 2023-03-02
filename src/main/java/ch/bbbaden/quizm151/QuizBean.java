@@ -43,6 +43,7 @@ public class QuizBean implements Serializable {
     private Date start = new Date();
     private int id_phrase;
     private int currentPhrase = 1;
+    String usedPhrases = "";
 
     private boolean spinDisabled = false;
     private boolean vowelsLeft = true;
@@ -304,9 +305,17 @@ public class QuizBean implements Serializable {
         vowelsLeft = true;
         setupDone = false;
         spinDisabled = false;
-
+        
         String rndmPhrase = db.getRndmPhrase();
-
+        /*
+        String rndmPhrase = "";
+        do{
+            System.out.println("test");
+            rndmPhrase = db.getRndmPhrase();
+        }while(usedPhrases.contains(rndmPhrase)); 
+                
+        usedPhrases += rndmPhrase;
+        */
         try {
 
             solution = rndmPhrase.split(" - ")[0];
