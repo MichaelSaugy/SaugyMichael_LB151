@@ -77,23 +77,23 @@ Es wird eine MySql Datenbank verwendet (was ist mit Interface gemeint)
 | 1.1  | Admin Account erstellt             | Name und Paswort        | Anzeigen der Administratorfuktionen                  |
 | 2.2  | Als Admin einloggen             | Neues Rätsel hinzufügen        | Rätsel wird der Tabelle "phrases" hinzugefügt                  |
 | 3.3  | Als Admin einloggen             | Kategorie hinzufügen        | Kategorie wird der DB hinzugefügt                  |
-| 3.3  | Kategorie erstellen             | Kategorie einem Rätsel hinzufügen        | In der DB ersichtliche Verbindung von Rätsel und Kategorie                  |
-| 4.4  |              |         |                   |
-| 5.5  | Seite aufrufen             | "Test" als Namen eingeben und das Spiel spielen        | Am Ende wird der Kontostand gemeinsam mit dem Namen gespeichert                   |
-| 6.6  | Seite aufrufen             | "Test" als Namen eingeben und das Spiel starten         | Oben rechts sind die Lebenspunkte ersichtlich                  |
-| 7.7  | Seite aufrufen             | "Test" als Namen eingeben und das Spiel starten         | Oben rechts ist der Kontostand ersichtlich                  |
-| 8.8  | Seite aufrugen und Spiel mit beliebigem Namen starten             | 1. Rätsel falsch beantowrten und das 2. richtig        | 1. Rätsel wird korrigiert                  |
-| 9.9  | Seite aufrufen und Spiel mit beliebigem Namen starten             | Ein Rätsel spielen und dann beenden (Darf kein Bankrot sein)        | Kontostand wird auf die Highscoreliste übertragen                  |
-| 10.10  | Seite aufrufen             | Einen Namen eingeben und Spiel starten        | Auf der rechten seite des Bildschirms ist eine Tabelle mit allen Informationen verfügbar                  |
-| 11.11  | Seite auftrufen             | Einen Namen eingeben und Spiel starten        | Auf der rechten seite des Bildschirms ist eine nach dem gewonnenen Betrag sortierte Rangliste/Tabelle                  |
-| 12.12  | Namen eingeben und Spiel starten             | Rätsel erraten und neu starten        | Das gesuchte Wort/Phrase ist eine andere als zuvor                  |
-| 13.13  | Namen eingeben und Spiel starten             | Einen Betrag von mehr als 0 erspielen und auf "Spiel verlassen" klicken        | In der Datenbank wurde eine Spielrunde mit dem Betrag und namen des Spielers erstellt                  |
-| 14.14  | Datenbank befüllt             | Datensätze zählen        | Mind. 20 verschiedene Wörter/Phrasen                  |
-| 15.15  | Spiel mit beliebigem Namen gestartet             | Wort/Phrase erraten        | Anzeige von "Rätsel 1" wird zu "Rätsel 2"                  |
-| A.16  |              |         |                   |
-| B.17  |              |         |                   |
-| C.18  |              |         |                   |
-| D.19  | Als Admin eingeloggt             | Auf "Inspect Phrases" klicken        | Tabelle mit allen Wörter und Phrasen und wie oft sie nicht erraten wurden                  |
+| 3.4  | Kategorie erstellen             | Kategorie einem Rätsel hinzufügen        | In der DB ersichtliche Verbindung von Rätsel und Kategorie                  |
+| 4.5  |              |         |                   |
+| 5.6  | Seite aufrufen             | "Test" als Namen eingeben und das Spiel spielen        | Am Ende wird der Kontostand gemeinsam mit dem Namen gespeichert                   |
+| 6.7  | Seite aufrufen             | "Test" als Namen eingeben und das Spiel starten         | Oben rechts sind die Lebenspunkte ersichtlich                  |
+| 7.8  | Seite aufrufen             | "Test" als Namen eingeben und das Spiel starten         | Oben rechts ist der Kontostand ersichtlich                  |
+| 8.9  | Seite aufrugen und Spiel mit beliebigem Namen starten             | 1. Rätsel falsch beantowrten und das 2. richtig        | 1. Rätsel wird korrigiert                  |
+| 9.10  | Seite aufrufen und Spiel mit beliebigem Namen starten             | Ein Rätsel spielen und dann beenden (Darf kein Bankrot sein)        | Kontostand wird auf die Highscoreliste übertragen                  |
+| 10.11  | Seite aufrufen             | Einen Namen eingeben und Spiel starten        | Auf der rechten seite des Bildschirms ist eine Tabelle mit allen Informationen verfügbar                  |
+| 11.12  | Seite auftrufen             | Einen Namen eingeben und Spiel starten        | Auf der rechten seite des Bildschirms ist eine nach dem gewonnenen Betrag sortierte Rangliste/Tabelle                  |
+| 12.13  | Namen eingeben und Spiel starten             | Rätsel erraten und neu starten        | Das gesuchte Wort/Phrase ist eine andere als zuvor                  |
+| 13.14  | Namen eingeben und Spiel starten             | Einen Betrag von mehr als 0 erspielen und auf "Spiel verlassen" klicken        | In der Datenbank wurde eine Spielrunde mit dem Betrag und namen des Spielers erstellt                  |
+| 14.15  | Datenbank befüllt             | Datensätze zählen        | Mind. 20 verschiedene Wörter/Phrasen                  |
+| 15.16  | Spiel mit beliebigem Namen gestartet             | Wort/Phrase erraten        | Anzeige von "Rätsel 1" wird zu "Rätsel 2"                  |
+| A.17  |              |         |                   |
+| B.18  |              |         |                   |
+| C.19  |              |         |                   |
+| D.20  | Als Admin eingeloggt             | Auf "Inspect Phrases" klicken        | Tabelle mit allen Wörter und Phrasen und wie oft sie nicht erraten wurden                  |
 
 ✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, die der Testfall abdeckt, und `m` von `1` an nach oben gezählt. Beispiel: Der dritte Testfall, der die zweite User Story abdeckt, hat also die Nummer `2.3`.
 
