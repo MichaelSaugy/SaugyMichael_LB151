@@ -85,11 +85,11 @@ Es wird eine MySql Datenbank verwendet (was ist mit Interface gemeint)
 | 6.7  | Seite aufrufen             | "Test" als Namen eingeben und das Spiel starten         | Oben rechts sind die Lebenspunkte ersichtlich                  |
 | 7.8  | Seite aufrufen             | "Test" als Namen eingeben und das Spiel starten         | Oben rechts ist der Kontostand ersichtlich                  |
 | 8.9  | Seite aufrugen und Spiel mit beliebigem Namen starten             | 1. Rätsel falsch beantowrten und das 2. richtig        | 1. Rätsel wird korrigiert                  |
-| 9.10  | Seite aufrufen und Spiel mit beliebigem Namen starten             | Einen Betrag von mehr als 0 erspielen und auf "Spiel verlassen klicken"        | Kontostand wird auf die Highscoreliste übertragen                  |
+| 9.10  | Seite aufrufen und Spiel mit beliebigem Namen starten             | Einen Betrag von mehr als 0 erspielen und auf "Spiel verlassen" klicken        | Kontostand wird auf die Highscoreliste übertragen                  |
 | 10.11  | Seite aufrufen             | Einen Namen eingeben und Spiel starten        | Auf der rechten seite des Bildschirms ist eine Tabelle mit allen Informationen verfügbar                  |
 | 11.12  | Seite auftrufen             | Einen Namen eingeben und Spiel starten        | Auf der rechten seite des Bildschirms ist eine nach dem gewonnenen Betrag sortierte Rangliste/Tabelle                  |
 | 12.13  | Namen eingeben und Spiel starten             | Rätsel erraten und neu starten        | Das gesuchte Wort/Phrase ist eine andere als zuvor                  |
-| 13.14  | Namen eingeben und Spiel starten             | Einen Betrag von mehr als 0 erspielen und auf "Spiel verlassen" klicken        | In der Datenbank wurde eine Spielrunde mit dem Betrag und namen des Spielers erstellt                  |
+| 13.14  | Namen eingeben und Spiel starten             | Auf "Spin" klicken        | Es erscheint entweder "Bankrot" oder ein Betrag                  |
 | 14.15  | Datenbank befüllt             | Datensätze zählen        | Mind. 20 verschiedene Wörter/Phrasen                  |
 | 15.16  | Spiel mit beliebigem Namen gestartet             | Wort/Phrase erraten        | Anzeige von "Rätsel Nr. 1" wird zu "Rätsel Nr. 2"                  |
 | 16.17  | Spiel gestartet und auf "Spin" geklickt (Darf nicht Bankrott sein)             | Konsonanten eingeben, welcher im Wort vorkommt        | Der Betrag, welcher beim "Spin" herauskam wurde dem Konto zugeschrieben                  |
