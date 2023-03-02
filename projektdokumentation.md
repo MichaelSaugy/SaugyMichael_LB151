@@ -133,7 +133,7 @@ Admin Interface:
 | 11   | ja        | DBConnection.java Zeile 87 Methode "getLeaderboard".                                          |
 | 12   | nein      | Erstellt eine unendliche Schleife nach einigem benutzen QuizBean.java Zeile 310                                          |
 | 13   | ja        | mainQuiz.xhtml Zeile 32 und QuizBean.java Zeile 131 Methode "Spin".                                          |
-| 14   | ja        | In der Datenbank oder im Skript quizm151.sql auf der Zeile 106.                                          |
+| 14   | ja        | In der Datenbank oder im Skript quizm151.sql ab der Zeile 106.                                          |
 | 15   | ja        | In QuizBean.java auf Zeile 294 wird dieser erhöht, auf Zeile 295 wird dieser beim Velieren auf 1 gesetzt und auf Zeile 327 wird dieser bei einem Neustart auf 1 gesetzt.                                          |
 | 16   | ja        | In QuizBean.java auf Zeile 206 in der Methode "guess".                                          |
 | 17   | ja        | Alles im "Template" Ornder                                          |
