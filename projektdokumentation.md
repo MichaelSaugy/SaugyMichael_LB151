@@ -98,12 +98,12 @@ Admin Interface:
 
 | User Story | Datum | Beschreibung |
 | ---------- | ----- | ------------ |
-| 2,3,4,6,7,13        | 13.02.2023      |              |
+| 2,3,4,6,7,13        | 13.02.2023      | Aufbau              |
 | 5,8,16              | 21.02.2023      |              |
 | 9,10,11             | 22.02.2023      |              |
 | 14                  | 23.20.2023      | DB befüllt               |
-| 1                   | 01.03.2023      | Admin Login hinzugefügt  |
-| ...        |       |              |
+| 1,12,14,15,d        | 01.03.2023      | Admin Login hinzugefügt  |
+| 17, 18, 19, 24    | 02.03.2023      |   |
 
 # 7 Projektdokumentation
 
