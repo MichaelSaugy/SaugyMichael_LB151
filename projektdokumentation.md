@@ -59,7 +59,7 @@ Es wird eine MySql Datenbank verwendet (was ist mit Interface gemeint)
 | 10   | Muss                | Funktional     | Als Kandidat möchte ich Rang, Name des Spielers, Zeitpunkt des Spiels, Geldbetrag und Anzahl der Spielrunden sehen, damit ich mich mit anderen Kandidaten vergleichen kann.                                   |
 | 11   | Muss                | Qualität     | Als Kandidat möchte ich, dass die Rangliste nach der höhe des Geldbetrags sortiert wird, damit ich eine bessere übersicht habe.                                    |
 | 12   | Muss                | Funktional     | Als Kandidat (Admin?) möchte ich jedes Rätsel-Wort oder Phrase nur einmal erhalten, damit das Spiel spannend bleibt.                                    |
-| 13   | Muss                | Funktional     | Als Kandidat möchte ich das Glücksrad drehen können, damit ich um einen Betrag spielen kann ---------- |
+| 13   | Muss                | Funktional     | Als Kandidat möchte ich das Glücksrad drehen können, damit ich um einen Betrag spielen kann |
 | 14   | Muss                | Qualität     | Als Administrator möchte ich, dass das Spiel mit genügend Wörter und Phrasen gefüllt ist, damit der Kandidat Spass hat                                   |
 | 15   | Muss                | Funktional     | Als Kandidat möchte ich, dass die Runden gezählt werden, damit ich weis in welcher Runde ich mich befinde.                                   |
 | 16   | Muss                | Funktional     | Als Kandidat möchte ich durch Raten eines Konsonanten den Betrag gewinnen, damit ich einen Gewinn erzielen kann                                   |
@@ -70,7 +70,6 @@ Es wird eine MySql Datenbank verwendet (was ist mit Interface gemeint)
 | C   | Kann                | Funktional     | Als Kandidat möchte ich eine Funktion haben, um ein Rätsel zu melden, falls ich denke, dass es sich um einen Schreibfehler handelt, damit ich dazu beitragen kann, die Qualität der Rätsel zu verbessern. |
 | D   | Muss                | Funktional     | Als Administrator möchte ich eine Funktion haben um die Statistiken der einzelnen Rätsel anzuzeigen, damit ich erfahre welche Rätsel besonders schwer oder leicht sind und anpassen kann. |
 
-✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc. oder Zahl), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). 
 
 # 4.2 Testfälle
 
@@ -80,7 +79,7 @@ Es wird eine MySql Datenbank verwendet (was ist mit Interface gemeint)
 | 2.2  | Als Admin einloggen             | Neues Rätsel hinzufügen        | Rätsel wird der Tabelle "phrases" hinzugefügt                  |
 | 3.3  | Als Admin einloggen             | Kategorie hinzufügen        | Kategorie wird der DB hinzugefügt                  |
 | 3.4  | Kategorie erstellen             | Kategorie einem Rätsel hinzufügen        | In der DB ersichtliche Verbindung von Rätsel und Kategorie                  |
-| 4.5  |              |         |                   |
+| 4.5  | Programm vorhanden             | Überpüfen um was für eine Art Programm es sich handelt        | Es handelt sich um eine Java Web Applikation                  |
 | 5.6  | Seite aufrufen             | "Test" als Namen eingeben und das Spiel spielen        | Name ist hinter "Spieler:" ersichtlich                   |
 | 6.7  | Seite aufrufen             | "Test" als Namen eingeben und das Spiel starten         | Oben rechts sind die Lebenspunkte ersichtlich                  |
 | 7.8  | Seite aufrufen             | "Test" als Namen eingeben und das Spiel starten         | Oben rechts ist der Kontostand ersichtlich                  |
@@ -88,12 +87,12 @@ Es wird eine MySql Datenbank verwendet (was ist mit Interface gemeint)
 | 9.10  | Seite aufrufen und Spiel mit beliebigem Namen starten             | Einen Betrag von mehr als 0 erspielen und auf "Spiel verlassen" klicken        | Kontostand wird auf die Highscoreliste übertragen                  |
 | 10.11  | Seite aufrufen             | Einen Namen eingeben und Spiel starten        | Auf der rechten seite des Bildschirms ist eine Tabelle mit allen Informationen verfügbar                  |
 | 11.12  | Seite auftrufen             | Einen Namen eingeben und Spiel starten        | Auf der rechten seite des Bildschirms ist eine nach dem gewonnenen Betrag sortierte Rangliste/Tabelle                  |
-| 12.13  | Namen eingeben und Spiel starten             | Rätsel erraten und neu starten        | Das gesuchte Wort/Phrase ist eine andere als zuvor                  |
+| 12.13  | Namen eingeben und Spiel starten             | Rätsel erraten und neu starten        | Das gesuchte Wort/Phrase ist ein anderes als zuvor                  |
 | 13.14  | Namen eingeben und Spiel starten             | Auf "Spin" klicken        | Es erscheint entweder "Bankrot" oder ein Betrag                  |
 | 14.15  | Datenbank befüllt             | Datensätze zählen        | Mind. 20 verschiedene Wörter/Phrasen                  |
 | 15.16  | Spiel mit beliebigem Namen gestartet             | Wort/Phrase erraten        | Anzeige von "Rätsel Nr. 1" wird zu "Rätsel Nr. 2"                  |
 | 16.17  | Spiel gestartet und auf "Spin" geklickt (Darf nicht Bankrott sein)             | Konsonanten eingeben, welcher im Wort vorkommt        | Der Betrag, welcher beim "Spin" herauskam wurde dem Konto zugeschrieben                  |
-| 17.18  | Code vorhanden             | Manuell überprüfen, ob ein template verwendet wurde        | Template wurde verwendet                 |
+| 17.18  | Code vorhanden             | Überprüfen, ob ein template verwendet wurde        | Template wurde verwendet                 |
 | 18.19  | Spiel gestartet oder Code vorhanden | Auf "Spin" klicken bis "Bankrot" erscheint oder im Code nach der Methode "Spin" suchen und überprüfen | Nach einigem Klicken erscheint "Bankrot" und das Spiel ist verloren oder es ist eine Wahrscheinlichkeit um zu verlieren in der Spin methode eingebaut |
 | A.20  |              |         |                   |
 | B.21  |              |         |                   |
@@ -150,7 +149,10 @@ Admin Interface:
 
 # 8 Testprotokoll
 
-✍️ Fügen Sie hier den Link zu dem Video ein, welches den Testdurchlauf dokumentiert.
+Video:           
+https://www.youtube.com/watch?v=0_IqwA7d-LM
+
+Folgende Testfälle sind im Video nicht ersichtlich: 4.4, 12.13, 14.15, 17.18
 
 | TC-№ | Datum | Resultat | Tester |
 | ---- | ----- | -------- | ------ |
