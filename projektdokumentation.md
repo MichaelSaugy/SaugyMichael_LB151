@@ -129,19 +129,21 @@ Admin Interface:
 | 1    | ja        | "adminLogin.xhtml" ist das Formular, der Code befindet sich in der Datei "AdminBean.java"                                          |
 | 2    | ja        | Befindet sich in den automatisch generierten Dateien Create.xhtml, Edit.xhtml, List,xhtml View.xhtml im Ordner "games". Dazu werden die Dateien Games.java, GamesController.java. GamesFacade.java verwendet. Diese sind ebenfalls automatisch generiert.                                         |
 | 3    | ja        | Durch die Automatisch generierten Dateien: Create.xhtml, Edit.xhtml, List,xhtml View.xhtml im Ordner "phrases" und "difficulty". AUsserdem werden die Dateien Difficulty.java, DifficultyController.java, DifficultyFacade, Phrases.java, PhrasesController.java und PhrasesFacade.java verwendet |
-| 4    | ja        | ----------                                          |
+| 4    | ja        | Java Web Applplikaiton                                          |
 | 5    | ja        | Auf der Seite index.xhtml wird der Name eingegeben, dieser wird dann in der Datei "QuizBean.java" gespeichert. |
 | 6    | ja        | Auf der Seite mainQuiz.xhtml auf Zeile 56 befindet sich das Label mit der Anzeige des Kontostands. |
 | 7    | ja        | Auf der Seite mainQuiz.xhtml auf Zeile 57 befindet sich das Label mit der Anzeige der Lebenspunkte. |
-| 8    | ja        | --------                                          |
+| 8    | ja        | QuizBean.java Zeile 268 und Zeile 284                                          |
 | 9    | ja        | QuizBean.java Zeile 321 Methode "saveGame" and DBConnection.java Zeile 50 Methode "saveToDB".                                          |
 | 10   | ja        | mainQuiz.xhtml Zeile 59.                                          |
 | 11   | ja        | DBConnection.java Zeile 87 Methode "getLeaderboard".                                          |
 | 12   | nein      | Keine Zeit.                                          |
 | 13   | ja        | mainQuiz.xhtml Zeile 32 und QuizBean.java Zeile 131 Methode "Spin".                                          |
-| 14   | ja        | In der Datenbank oder im Skript quizm151.sql auf Zeile 106.                                          |
+| 14   | ja        | In der Datenbank oder im Skript quizm151.sql auf der Zeile 106.                                          |
 | 15   | ja        | In QuizBean.java auf Zeile 294 wird dieser erhöht, auf Zeile 295 wird dieser beim Velieren auf 1 gesetzt und auf Zeile 327 wird dieser bei einem Neustart auf 1 gesetzt.                                          |
 | 16   | ja        | In QuizBean.java auf Zeile 206 in der Methode "guess".                                          |
+| 17   | ja        | Alles im "Template" Ornder                                          |
+| 18   | ja        | In QuizBean.java auf Zeile 135 in der Methode "spin".                                          |
 | A    | nein      | Keine Zeit - Kann-Anforderung                                          |
 | B    | nein      | Keine Zeit - Kann-Anforderung                                          |
 | C    | nein      | Keine Zeit - Kann-Anforderung                                          |
@@ -156,14 +158,34 @@ Folgende Testfälle sind im Video nicht ersichtlich: 4.4, 12.13, 14.15, 17.18
 
 | TC-№ | Datum | Resultat | Tester |
 | ---- | ----- | -------- | ------ |
-| 1.1  |       |          |        |
-| ...  |       |          |        |
+| 1.1  | 02.03.2023     | Ok         | Michael Saugy        |
+| 2.2  | 02.03.2023     | Ok           | Michael Saugy        |
+| 3.3  | 02.03.2023     | Ok          | Michael Saugy        |
+| 3.4  | 02.03.2023     | Ok          | Michael Saugy        |
+| 4.5  | 02.03.2023     | Ok          | Michael Saugy        |
+| 5.6  | 02.03.2023     | Ok          | Michael Saugy        |
+| 6.7  | 02.03.2023     | Ok          | Michael Saugy        |
+| 7.8  | 02.03.2023     | Ok          | Michael Saugy        |
+| 8.9  | 02.03.2023     | Ok          | Michael Saugy        |
+| 9.10  | 02.03.2023       | Ok          | Michael Saugy        |
+| 10.11  | 02.03.2023       | Ok          | Michael Saugy        |
+| 11.12  | 02.03.2023       | Ok          | Michael Saugy        |
+| 12.13  | 02.03.2023       | NOk         | Michael Saugy        |
+| 13.14  | 02.03.2023       | Ok          | Michael Saugy        |
+| 14.15  | 02.03.2023       | Ok          | Michael Saugy        |
+| 15.16  | 02.03.2023       | Ok          | Michael Saugy        |
+| 16.17  | 02.03.2023       | Ok          | Michael Saugy        |
+| 17.18  | 02.03.2023       | Ok          | Michael Saugy        |
+| 18.19  | 02.03.2023       | Ok          | Michael Saugy        |
+| A.20  | 02.03.2023       | NOk          | Michael Saugy        |
+| B.21  | 02.03.2023       | NOk          | Michael Saugy        |
+| C.22  | 02.03.2023       | NOk          | Michael Saugy        |
+| D.23  | 02.03.2023       | Ok           | Michael Saugy        |
+| 19.24  | 02.03.2023       | Ok          | Michael Saugy        |
 
 ✍️ Vergessen Sie nicht, ein Fazit hinzuzufügen, welches das Test-Ergebnis einordnet.
 
-# 9 `README.md`
-
-✍️ Beschreiben Sie ausführlich in einer README.md, wie Ihre Applikation gestartet und ausgeführt wird. Legen Sie eine geeignete Möglichkeit (Skript, Export, …) bei, Ihre Datenbank wiederherzustellen.
+Alle bis auf 1 Muss-Anfoderungen wurden erfüllt. Das Programm kann trotz allem Problemlos genutzt werden.
 
 # 10 Allgemeines
 
