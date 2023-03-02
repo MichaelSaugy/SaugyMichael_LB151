@@ -12,15 +12,11 @@ import java.util.Date;
 import java.util.List;
 import java.util.Random;
 import javax.enterprise.context.SessionScoped;
+import javax.faces.application.FacesMessage;
+import javax.faces.context.FacesContext;
 import javax.inject.Named;
-import javax.naming.InitialContext;
 import javax.naming.NamingException;
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.EntityTransaction;
-import javax.persistence.Persistence;
 import javax.transaction.SystemException;
-import javax.transaction.UserTransaction;
 
 /**
  *
@@ -39,12 +35,14 @@ public class QuizBean implements Serializable {
     private int balance;
     private int lives = 3;
     private String spinResult;
-    private String placeHolder;
+    private String answerGrid;
     private boolean setupDone = false;
     private char consonant;
     private String solutionGuess;
     private boolean wordGuessed = false;
-    private String leaderboard;
+    private Date start = new Date();
+    private int id_phrase;
+    private int currentPhrase = 1;
 
     private boolean spinDisabled = false;
     private boolean vowelsLeft = true;
@@ -53,12 +51,10 @@ public class QuizBean implements Serializable {
         return username;
     }
 
-    public String getLeaderboard() {
-        leaderboard = db.getLeaderborard();
-        return leaderboard;
+    public List<Games> getLeaderboard() {
+        return db.getLeaderborard();
     }
 
-    
     public void setUsername(String username) {
         System.out.println(username);
         this.username = username;
@@ -90,6 +86,10 @@ public class QuizBean implements Serializable {
 
     public String getSpinResult() {
         return spinResult;
+    }
+
+    public int getCurrentPhrase() {
+        return currentPhrase;
     }
 
     public char getConsonant() {
@@ -134,20 +134,21 @@ public class QuizBean implements Serializable {
 
         if (3 >= rand.nextInt(101)) {
             spinResult = "Bankrot ._.";
-            System.out.println("Du hast verloren");
+            setLives(1);
+            loseLive();
         } else {
             spinResult = "Betrag: " + rand.nextInt(201);
         }
     }
 
-    public String getPlaceHolder() {
+    public String getAnswerGrid() {
         if (!wordGuessed) {
-            placeHolder = "";
+            answerGrid = "";
             for (QuizLetter letter : letters) {
-                placeHolder += letter + " ";
+                answerGrid += letter + "";
             }
         }
-        return formatText(placeHolder, 24);
+        return formatText(answerGrid, 24);
     }
 
     private String formatText(String text, int lineLength) {
@@ -208,7 +209,31 @@ public class QuizBean implements Serializable {
                 System.out.println("Leben verloren");
                 loseLive();
             }
+
+            if (!consonantsLeft()) {
+                FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Es sind keine Konsonanten mehr übrig, geben sie die Lösung ein oder Kaufen sie Vokale!", "Es sind keine Konsonanten mehr überig, geben sie die Lösung ein oder Kaufen sie Vokale!"));
+            }
+
         }
+    }
+
+    private boolean consonantsLeft() {
+
+        String consonants = "bcdfghjklmnpqrstvwxyz";
+        for (int i = 0; i < consonants.length(); i++) {
+            boolean consonantLeft = false;
+            for (QuizLetter letter : letters) {
+                if (Character.toLowerCase(letter.getValue()) == consonants.charAt(i)) {
+                    if(letter.isHidden()){
+                        consonantLeft = true;
+                    }
+                }
+            }
+            if (consonantLeft) {
+                return true;
+            }
+        }
+        return false;
     }
 
     public void showVowels() {
@@ -219,7 +244,6 @@ public class QuizBean implements Serializable {
             for (int i = 0; i < vowels.length(); i++) {
                 boolean allShown = true;
                 for (QuizLetter letter : letters) {
-                    System.out.println(Character.toLowerCase(letter.getValue()));
                     if (Character.toLowerCase(letter.getValue()) == vowels.charAt(i)) {
                         letter.show();
                     }
@@ -241,7 +265,7 @@ public class QuizBean implements Serializable {
     private void wordGuessed() {
         wordGuessed = true;
         System.out.println("Wort erraten!");
-        placeHolder = solution;
+        answerGrid = solution;
     }
 
     public void guessSolution() {
@@ -257,6 +281,7 @@ public class QuizBean implements Serializable {
         if (lives == 0) {
             System.out.println("Verloren!!");
             try {
+                db.updateTimesFailed(id_phrase);
                 restart();
             } catch (Exception e) {
 
@@ -266,12 +291,16 @@ public class QuizBean implements Serializable {
     }
 
     public void restart() {
-        wordGuessed = false;
-        if (lives == 0) {
+        currentPhrase++;
+        if (!wordGuessed) {
             balance = 0;
+            currentPhrase = 1;
         }
+        System.out.println(currentPhrase);
         lives = 3;
+        vowelsLeft = true;
         setupDone = false;
+        spinDisabled = false;
 
         String rndmPhrase = db.getRndmPhrase();
 
@@ -279,25 +308,23 @@ public class QuizBean implements Serializable {
 
             solution = rndmPhrase.split(" - ")[0];
             category = rndmPhrase.split(" - ")[1];
+            id_phrase = Integer.valueOf(rndmPhrase.split(" - ")[2]);
+
         } catch (Exception e) {
             System.out.println("Error with Phrase");
         }
 
-        try {
-            System.out.println("speichern...");
-            safeGame();
-            System.out.println("gespeichert");
-        } catch (Exception e) {
-            System.out.println("Fail");
-            System.out.println(e);
-        }
         setupLetters();
+        wordGuessed = false;
     }
 
-    private void safeGame() throws IllegalStateException, SecurityException, SystemException, NamingException {
+    public void saveGame() throws IllegalStateException, SecurityException, SystemException, NamingException {
         if (balance > 0) {
-            db.safeToDB(username, balance, new Date().toString(), new Date().toString());
+            db.saveToDB(username, balance, currentPhrase, start.toString(), new Date().toString());
         }
+        restart();
+        balance = 0;
+        currentPhrase = 1;
     }
 
 }

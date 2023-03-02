@@ -30,6 +30,7 @@ import javax.xml.bind.annotation.XmlRootElement;
     @NamedQuery(name = "Games.findById", query = "SELECT g FROM Games g WHERE g.id = :id"),
     @NamedQuery(name = "Games.findByName", query = "SELECT g FROM Games g WHERE g.name = :name"),
     @NamedQuery(name = "Games.findByBalance", query = "SELECT g FROM Games g WHERE g.balance = :balance"),
+    @NamedQuery(name = "Games.findByNumberOfRounds", query = "SELECT g FROM Games g WHERE g.numberOfRounds = :numberOfRounds"),
     @NamedQuery(name = "Games.findByStart", query = "SELECT g FROM Games g WHERE g.start = :start"),
     @NamedQuery(name = "Games.findByEnd", query = "SELECT g FROM Games g WHERE g.end = :end")})
 public class Games implements Serializable {
@@ -49,6 +50,10 @@ public class Games implements Serializable {
     @NotNull
     @Column(name = "balance")
     private int balance;
+    @Basic(optional = false)
+    @NotNull
+    @Column(name = "numberOfRounds")
+    private int numberOfRounds;
     @Size(max = 250)
     @Column(name = "start")
     private String start;
@@ -63,10 +68,11 @@ public class Games implements Serializable {
         this.id = id;
     }
 
-    public Games(Integer id, String name, int balance) {
+    public Games(Integer id, String name, int balance, int numberOfRounds) {
         this.id = id;
         this.name = name;
         this.balance = balance;
+        this.numberOfRounds = numberOfRounds;
     }
 
     public Integer getId() {
@@ -93,7 +99,16 @@ public class Games implements Serializable {
         this.balance = balance;
     }
 
+    public int getNumberOfRounds() {
+        return numberOfRounds;
+    }
+
+    public void setNumberOfRounds(int numberOfRounds) {
+        this.numberOfRounds = numberOfRounds;
+    }
+
     public String getStart() {
+        //Darstellung ändern, damit die Liste schön aussieht
         return start;
     }
 

@@ -6,33 +6,14 @@
         <title>Facelet Title</title>
         <h:outputStylesheet name="css/jsfcrud.css"/>
     </h:head>
-    <h:body>Please type your name
+    <h:body>
         <h:form>
-            <h:inputText value="#{QuizBean.username}" />
-            <h:commandButton action="quiz/mainQuiz.xhtml" value="Jetzt spielen"/>
+            <h1>Quiz</h1>
+            <p>Name: <h:inputText value="#{QuizBean.username}" />
+                <h:commandButton action="quiz/mainQuiz.xhtml" value="Jetzt spielen"/></p>
+            <br/>
+            <h:commandLink action="quiz/adminLogin.xhtml" value="Als Admin anmelden"/>
         </h:form>
-
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <h:link outcome="/spiele/List" value="Admin..."/>
-        <br />
-        <h:link outcome="/category/List" value="Show All Category Items"/>
-        <br />
-        <h:link outcome="/difficulty/List" value="Show All Difficulty Items"/>
-        <br />
-        <h:link outcome="/phrases/List" value="Show All Phrases Items"/>
-        <br />
-        <h:link outcome="/games/List" value="Show All Games Items"/>
     </h:body>
-
-
-
-
-
-
-
 </html>
 

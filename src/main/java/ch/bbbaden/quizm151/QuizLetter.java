@@ -14,9 +14,9 @@ public class QuizLetter {
 
     public QuizLetter(char value) {
         if(value == ' '){
-            value = '|';
+            value = ' ';
             show();
-        }
+        } 
         
         this.value = value;
     }
