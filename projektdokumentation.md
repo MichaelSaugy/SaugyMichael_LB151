@@ -11,13 +11,9 @@ Saugy
 
 # 0 Ihr Projekt
 
-✍️ Beschreiben Sie Ihr Projekt in einem griffigen Satz.
-
 Ein Quiz, bei welchem man ein Wort oder ein Satz erraten muss, um einen Gewinn zu erzielen.
 
 # 1 Analyse
-
-✍️ Beschreiben Sie, auf welchem Tier Sie die dynamischen Elemente der Anwendung unterbringen möchten:
 
 * Tier 1 (Presentation): Webseite (Glücksrad Eingabefelder), JSF
 * Tier 2 (Webserver): Daten von den Eingabefeldern empfangen und überprüfen, JSF
@@ -142,7 +138,7 @@ Admin Interface:
 Video:           
 https://www.youtube.com/watch?v=0_IqwA7d-LM
 
-Folgende Testfälle sind im Video nicht ersichtlich: 4.4, 12.13, 14.15, 17.18
+Folgende Testfälle sind im Video nicht ersichtlich: 4.4, 12.13, 14.15, 17.18, 19.24
 
 | TC-№ | Datum | Resultat | Tester |
 | ---- | ----- | -------- | ------ |
@@ -171,7 +167,6 @@ Folgende Testfälle sind im Video nicht ersichtlich: 4.4, 12.13, 14.15, 17.18
 | D.23  | 02.03.2023       | Ok           | Michael Saugy        |
 | 19.24  | 02.03.2023       | Ok          | Michael Saugy        |
 
-✍️ Vergessen Sie nicht, ein Fazit hinzuzufügen, welches das Test-Ergebnis einordnet.
 
 Alle bis auf 1 Muss-Anfoderungen wurden erfüllt. Das Programm kann trotz allem Problemlos genutzt werden.
 
