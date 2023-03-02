@@ -18,7 +18,7 @@ Ein Quiz, bei welchem man ein Wort oder ein Satz erraten muss, um einen Gewinn z
 * Tier 1 (Presentation): Webseite (Glücksrad Eingabefelder), JSF
 * Tier 2 (Webserver): Daten von den Eingabefeldern empfangen und überprüfen, JSF
 * Tier 3 (Application Server): Prüfung der Buchstaben und das AdminLogin 
-* Tier 4 (Dataserver): Highscore Liste, Rätsel-wörter/-phrases in mySQL
+* Tier 4 (Dataserver): Highscore Liste, Rätsel-wörter/-phrasen in mySQL
 
 # 2 Technologie
 Ich habe mich für JSF und mySQL entschieden, da wir diese im Unterricht bereits behandelt haben. Ausserdem hat unsere Lehrperson ebenfalls mit JSF und mySQL gearbeitet, dadurch kann ich mir besser Hilfe holen, falls ich diese benötige
@@ -33,15 +33,15 @@ Ich habe eine mySQL Datenbank verwendet. Diese habe ich mit phpMyAdmin erstell. 
 | 1    | Muss                | Funktional     | Als Administrator möchte ich mich durch die Eingabe meines Benutzernamens und Passworts authentifizieren können, damit ich auf die Administrationsfunktionen zugreifen kann. |
 | 2    | Muss                | Funktional     | Als Administrator möchte ich Phrasen und Rätselwörter anlegen, ändern und löschen können, damit ich das Angebot an Rätseln und Fragen ändern kann.                                   |
 | 3    | Muss                | Funktional     | Als Administrator möchte ich Kategorien anlegen und jedes Wort bzw. jede Frage einer Kategorie zuordnen können, damit ich die Rätsel und Fragen verwalten kann und der Nutzer weis, um was es geht                                   |
-| 4    | Muss                | Randbedingung     | Als Client dient ein Webbrowser. |
+| 4    | Muss                | Randbedingung     | Als Client dient ein Webbrowser, um einfacher auf das Programm zugreiffen zu können. |
 | 5    | Muss                | Funktional     | Als Kandidat möchte ich meinen Namen eingeben, damit ich auf der Highscsoreliste erscheinen kann und meine Leistungen mit anderen teilen kann.                                   |
 | 6    | Muss                | Funktional     | Als Kandidat möchte ich jederzeit meinen Kontostand sehen können, damit ich den Fortschritt des Spiels verfolgen kann.                                   |
 | 7    | Muss                | Funktional     | Als Kandidat möchte ich jederzeit meinen Lebenspunkte sehen können, damit ich den Fortschritt des Spiels verfolgen kann.                                   |
 | 8    | Muss                | Funktional     | Als Kandidat möchte ich erfahren, ob meine Antwort richtig oder falsch war, damit ich mein Wissen verbessern kann und beim nächste Mal besser bin.                                   |
 | 9    | Muss                | Funktional     | Als Kandidat möchte ich das Spiel jederzeit beenden und meinen Gewinn in die Highscore-Liste übernehmen können, damit ich meine Leistungen aufzeichnen kann.                                   |
 | 10   | Muss                | Funktional     | Als Kandidat möchte ich Rang, Name des Spielers, Zeitpunkt des Spiels, Geldbetrag und Anzahl der Spielrunden sehen, damit ich mich mit anderen Kandidaten vergleichen kann.                                   |
-| 11   | Muss                | Qualität     | Als Kandidat möchte ich, dass die Rangliste nach der höhe des Geldbetrags sortiert wird, damit ich eine bessere übersicht habe.                                    |
-| 12   | Muss                | Funktional     | Als Kandidat (Admin?) möchte ich jedes Rätsel-Wort oder Phrase nur einmal erhalten, damit das Spiel spannend bleibt.                                    |
+| 11   | Muss                | Funktional     | Als Kandidat möchte ich, dass die Rangliste nach der höhe des Geldbetrags sortiert wird, damit ich eine bessere übersicht habe.                                    |
+| 12   | Muss                | Funktional     | Als Kandidat möchte ich jedes Rätsel-Wort oder Phrase nur einmal erhalten, damit das Spiel spannend bleibt.                                    |
 | 13   | Muss                | Funktional     | Als Kandidat möchte ich das Glücksrad drehen können, damit ich um einen Betrag spielen kann |
 | 14   | Muss                | Qualität     | Als Administrator möchte ich, dass das Spiel mit genügend Wörter und Phrasen gefüllt ist, damit der Kandidat Spass hat                                   |
 | 15   | Muss                | Funktional     | Als Kandidat möchte ich, dass die Runden gezählt werden, damit ich weis in welcher Runde ich mich befinde.                                   |
@@ -69,8 +69,8 @@ Ich habe eine mySQL Datenbank verwendet. Diese habe ich mit phpMyAdmin erstell. 
 | 7.8  | Seite aufrufen             | "Test" als Namen eingeben und das Spiel starten         | Oben rechts ist der Kontostand ersichtlich                  |
 | 8.9  | Seite aufrugen und Spiel mit beliebigem Namen starten             | 1. Rätsel falsch beantowrten und das 2. richtig        | 1. Rätsel wird korrigiert                  |
 | 9.10  | Seite aufrufen und Spiel mit beliebigem Namen starten             | Einen Betrag von mehr als 0 erspielen und auf "Spiel verlassen" klicken        | Kontostand wird auf die Highscoreliste übertragen                  |
-| 10.11  | Seite aufrufen             | Einen Namen eingeben und Spiel starten        | Auf der rechten seite des Bildschirms ist eine Tabelle mit allen Informationen verfügbar                  |
-| 11.12  | Seite auftrufen             | Einen Namen eingeben und Spiel starten        | Auf der rechten seite des Bildschirms ist eine nach dem gewonnenen Betrag sortierte Rangliste/Tabelle                  |
+| 10.11  | Seite aufrufen             | Einen Namen eingeben und Spiel starten        | Auf der rechten Seite des Bildschirms ist eine Tabelle mit allen Informationen verfügbar                  |
+| 11.12  | Seite auftrufen             | Einen Namen eingeben und Spiel starten        | Auf der rechten Seite des Bildschirms ist eine nach dem gewonnenen Betrag sortierte Rangliste/Tabelle                  |
 | 12.13  | Namen eingeben und Spiel starten             | Rätsel erraten und neu starten        | Das gesuchte Wort/Phrase ist ein anderes als zuvor                  |
 | 13.14  | Namen eingeben und Spiel starten             | Auf "Spin" klicken        | Es erscheint entweder "Bankrot" oder ein Betrag                  |
 | 14.15  | Datenbank befüllt             | Datensätze zählen        | Mind. 20 verschiedene Wörter/Phrasen                  |
@@ -170,8 +170,3 @@ Folgende Testfälle sind im Video nicht ersichtlich: 4.4, 12.13, 14.15, 17.18, 1
 
 Alle bis auf 1 Muss-Anfoderungen wurden erfüllt. Das Programm kann trotz allem Problemlos genutzt werden.
 
-# 10 Allgemeines
-
-- [ ] Ich habe die Rechtschreibung überprüft
-- [ ] Ich habe überprüft, dass die Nummerierung von Testfällen und User Stories übereinstimmen
-- [ ] Ich habe alle mit ✍️ markierten Teile ersetzt
