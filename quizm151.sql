@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 02. Mrz 2023 um 10:21
+-- Erstellungszeit: 02. Mrz 2023 um 16:20
 -- Server-Version: 10.4.21-MariaDB
 -- PHP-Version: 8.0.12
 
@@ -83,7 +83,8 @@ CREATE TABLE `games` (
 
 INSERT INTO `games` (`id`, `name`, `balance`, `numberOfRounds`, `start`, `end`) VALUES
 (50, 'e', 489, 3, 'Wed Mar 01 16:03:04 CET 2023', 'Wed Mar 01 16:04:25 CET 2023'),
-(51, 'Edi', 1134, 5, 'Wed Mar 01 21:35:48 CET 2023', 'Wed Mar 01 21:42:04 CET 2023');
+(51, 'Edi', 1134, 5, 'Wed Mar 01 21:35:48 CET 2023', 'Wed Mar 01 21:42:04 CET 2023'),
+(54, 'Test', 627, 2, 'Thu Mar 02 13:57:40 CET 2023', 'Thu Mar 02 13:59:41 CET 2023');
 
 -- --------------------------------------------------------
 
@@ -104,13 +105,27 @@ CREATE TABLE `phrases` (
 --
 
 INSERT INTO `phrases` (`id`, `phrase`, `timesFailed`, `id_category`, `id_difficulty`) VALUES
-(2, 'Cristiano Ronaldo', 2, 2, 1),
-(4, 'Felsformation', 0, 3, 2),
+(2, 'Cristiano Ronaldo', 3, 2, 1),
+(4, 'Felsformation', 3, 3, 2),
 (6, 'Biodiversität', 1, 3, 2),
-(8, 'Schneegipfel', 3, 3, 1),
-(9, 'Morgentau', 1, 3, 1),
+(8, 'Schneegipfel', 5, 3, 1),
+(9, 'Morgentau', 2, 3, 1),
 (12, 'Biolumineszenz', 1, 3, 3),
-(15, 'Leonardo da Vinci', 5, 1, 1);
+(15, 'Leonardo da Vinci', 6, 1, 1),
+(19, 'Lionel Messi', 0, 2, 1),
+(20, 'Kylian Mbappé', 0, 2, 2),
+(21, 'Vincent van Gogh', 0, 1, 2),
+(22, 'Pablo Picasso', 0, 1, 2),
+(23, 'Kaufmann', 0, 4, 2),
+(24, 'Informatiker', 0, 4, 2),
+(25, 'Verkäufer', 0, 4, 2),
+(26, 'Kraftfahrzeugmechatroniker', 0, 4, 3),
+(27, 'Michelangelo Buonarroti', 0, 1, 3),
+(28, 'Diego Maradona', 0, 2, 2),
+(29, 'Elektroniker', 0, 4, 2),
+(30, 'Astronaut', 0, 4, 1),
+(31, 'Arzt', 0, 4, 1),
+(32, 'Baumstamm', 0, 3, 1);
 
 --
 -- Indizes der exportierten Tabellen
@@ -150,7 +165,7 @@ ALTER TABLE `phrases`
 -- AUTO_INCREMENT für Tabelle `category`
 --
 ALTER TABLE `category`
-  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT für Tabelle `difficulty`
@@ -162,13 +177,13 @@ ALTER TABLE `difficulty`
 -- AUTO_INCREMENT für Tabelle `games`
 --
 ALTER TABLE `games`
-  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
+  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
 
 --
 -- AUTO_INCREMENT für Tabelle `phrases`
 --
 ALTER TABLE `phrases`
-  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- Constraints der exportierten Tabellen
