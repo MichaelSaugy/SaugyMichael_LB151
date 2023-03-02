@@ -64,7 +64,7 @@ Es wird eine MySql Datenbank verwendet (was ist mit Interface gemeint)
 | 15   | Muss                | Funktional     | Als Kandidat möchte ich, dass die Runden gezählt werden, damit ich weis in welcher Runde ich mich befinde.                                   |
 | 16   | Muss                | Funktional     | Als Kandidat möchte ich durch Raten eines Konsonanten den Betrag gewinnen, damit ich einen Gewinn erzielen kann                                   |
 | 17   | Muss                | Randbedingung     | Als Template möchte ein Layout verwendet wird, damit ich nicht den gleichen Code mehrmals verwenden muss.                                   |
-| 17   | Muss                | Funktional     | Als Kandidat möchte, dass beim Drehen eine Wahrscheinlichkeit besteht, bankrott zu gehen, damit das Spiel interessant bleibt.                                   |
+| 18   | Muss                | Funktional     | Als Kandidat möchte, dass beim Drehen eine Wahrscheinlichkeit besteht, bankrott zu gehen, damit das Spiel interessant bleibt.                                   |
 | A   | Kann                | Funktional     | Als Kandidat möchte ich, die Schwierigkeit der Wörter/Phrasen ändern können, damit ich auf einem mir angemessenen Niveau spielen kann.                                   |
 | B   | Kann                | Funktional     | Als Kandidat möchte ich eine Hilfe-Funktion haben, die mir ermöglicht, Hinweise oder Tipps zu einer Frage oder einem Rätsel zu erhalten, damit ich das Rätsel besser lösen kann. |
 | C   | Kann                | Funktional     | Als Kandidat möchte ich eine Funktion haben, um ein Rätsel zu melden, falls ich denke, dass es sich um einen Schreibfehler handelt, damit ich dazu beitragen kann, die Qualität der Rätsel zu verbessern. |
@@ -92,8 +92,9 @@ Es wird eine MySql Datenbank verwendet (was ist mit Interface gemeint)
 | 13.14  | Namen eingeben und Spiel starten             | Einen Betrag von mehr als 0 erspielen und auf "Spiel verlassen" klicken        | In der Datenbank wurde eine Spielrunde mit dem Betrag und namen des Spielers erstellt                  |
 | 14.15  | Datenbank befüllt             | Datensätze zählen        | Mind. 20 verschiedene Wörter/Phrasen                  |
 | 15.16  | Spiel mit beliebigem Namen gestartet             | Wort/Phrase erraten        | Anzeige von "Rätsel Nr. 1" wird zu "Rätsel Nr. 2"                  |
-| 16.17  | Spiel mit beliebigem Namen gestartet             | Wort/Phrase erraten        | Anzeige von "Rätsel Nr. 1" wird zu "Rätsel Nr. 2"                  |
-| 17.18  | Spiel mit beliebigem Namen gestartet             | Wort/Phrase erraten        | Anzeige von "Rätsel Nr. 1" wird zu "Rätsel Nr. 2"                  |
+| 16.17  | Spiel gestartet und auf "Spin" geklickt (Darf nicht Bankrott sein)             | Konsonanten eingeben, welcher im Wort vorkommt        | Der Betrag, welcher beim "Spin" herauskam wurde dem Konto zugeschrieben                  |
+| 17.18  | Code vorhanden             | Manuell überprüfen, ob ein template verwendet wurde        | Template wurde verwendet                 |
+| 18.19  | Spiel gestartet ode Code vorhanden | Auf "Spin" klicken bis "Bankrot" erscheint oder im Code nach der Methode "Spin" suchen und überprüfen | Nach einigem Klicken erscheint "Bankrot" und das Spiel ist verloren oder eine Wahrscheinlichkeit um zu verlieren in der Spin methode eingebaut |
 | A.17  |              |         |                   |
 | B.18  |              |         |                   |
 | C.19  |              |         |                   |
