@@ -75,9 +75,9 @@ Es wird eine MySql Datenbank verwendet (was ist mit Interface gemeint)
 | TC-№ | Vorbereitung | Eingabe | Erwartete Ausgabe |
 | ---- | ------------ | ------- | ----------------- |
 | 1.1  | Admin Account erstellt             | Name und Paswort        | Anzeigen der Administratorfuktionen                  |
-| 2.2  | Als Admin einloggen             | Neues Rätsel hinzufügen        | Rätsel wird der Tabelle "Raetsel" hinzugefügt                  |
+| 2.2  | Als Admin einloggen             | Neues Rätsel hinzufügen        | Rätsel wird der Tabelle "phrases" hinzugefügt                  |
 | 3.3  | Als Admin einloggen             | Kategorie hinzufügen        | Kategorie wird der DB hinzugefügt                  |
-| 3.3  | Kategorie erstellen             | Rätsel einer Kategorie hinzufügen        | In der DB ersichtliche Verbindung von Rätsel und Kategorie                  |
+| 3.3  | Kategorie erstellen             | Kategorie einem Rätsel hinzufügen        | In der DB ersichtliche Verbindung von Rätsel und Kategorie                  |
 | 4.4  |              |         |                   |
 | 5.5  | Seite aufrufen             | "Test" als Namen eingeben und das Spiel spielen        | Am Ende wird der Kontostand gemeinsam mit dem Namen gespeichert                   |
 | 6.6  | Seite aufrufen             | "Test" als Namen eingeben und das Spiel starten         | Oben rechts sind die Lebenspunkte ersichtlich                  |
