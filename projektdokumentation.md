@@ -94,7 +94,7 @@ Es wird eine MySql Datenbank verwendet (was ist mit Interface gemeint)
 | 15.16  | Spiel mit beliebigem Namen gestartet             | Wort/Phrase erraten        | Anzeige von "Rätsel Nr. 1" wird zu "Rätsel Nr. 2"                  |
 | 16.17  | Spiel gestartet und auf "Spin" geklickt (Darf nicht Bankrott sein)             | Konsonanten eingeben, welcher im Wort vorkommt        | Der Betrag, welcher beim "Spin" herauskam wurde dem Konto zugeschrieben                  |
 | 17.18  | Code vorhanden             | Manuell überprüfen, ob ein template verwendet wurde        | Template wurde verwendet                 |
-| 18.19  | Spiel gestartet ode Code vorhanden | Auf "Spin" klicken bis "Bankrot" erscheint oder im Code nach der Methode "Spin" suchen und überprüfen | Nach einigem Klicken erscheint "Bankrot" und das Spiel ist verloren oder eine Wahrscheinlichkeit um zu verlieren in der Spin methode eingebaut |
+| 18.19  | Spiel gestartet oder Code vorhanden | Auf "Spin" klicken bis "Bankrot" erscheint oder im Code nach der Methode "Spin" suchen und überprüfen | Nach einigem Klicken erscheint "Bankrot" und das Spiel ist verloren oder eine Wahrscheinlichkeit um zu verlieren in der Spin methode eingebaut |
 | A.17  |              |         |                   |
 | B.18  |              |         |                   |
 | C.19  |              |         |                   |
