@@ -41,10 +41,6 @@ Es wird eine MySql Datenbank verwendet (was ist mit Interface gemeint)
 
 # 4.1 User Stories
 
-✍️ Formulieren Sie klare Anforderungen in der Form von User Stories (*„als … möchte ich … damit …“*) und zu jeder Anforderung mindestens einen dazugehörigen Testfall (in Kapitel 4.2). 
-
-✍️ Formulieren Sie weitere, eigene Anforderungen und Testfälle, wie Sie Ihre Applikation erweitern möchten. Geben Sie diesen statt einer Nummer einen Buchstaben (`A`, `B`, etc.)
-
 | US-№ | Verbindlichkeit | Typ  | Beschreibung                       |
 | ---- | --------------- | ---- | ---------------------------------- |
 | 1    | Muss                | Funktional     | Als Administrator möchte ich mich durch die Eingabe meines Benutzernamens und Passworts authentifizieren können, damit ich auf die Administrationsfunktionen zugreifen kann. |
@@ -135,7 +131,7 @@ Admin Interface:
 | 9    | ja        | QuizBean.java Zeile 321 Methode "saveGame" and DBConnection.java Zeile 50 Methode "saveToDB".                                          |
 | 10   | ja        | mainQuiz.xhtml Zeile 59.                                          |
 | 11   | ja        | DBConnection.java Zeile 87 Methode "getLeaderboard".                                          |
-| 12   | nein      | Keine Zeit.                                          |
+| 12   | nein      | Erstellt eine unendliche Schleife nach einigem benutzen QuizBean.java Zeile 310                                          |
 | 13   | ja        | mainQuiz.xhtml Zeile 32 und QuizBean.java Zeile 131 Methode "Spin".                                          |
 | 14   | ja        | In der Datenbank oder im Skript quizm151.sql auf der Zeile 106.                                          |
 | 15   | ja        | In QuizBean.java auf Zeile 294 wird dieser erhöht, auf Zeile 295 wird dieser beim Velieren auf 1 gesetzt und auf Zeile 327 wird dieser bei einem Neustart auf 1 gesetzt.                                          |
