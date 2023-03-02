@@ -95,10 +95,10 @@ Es wird eine MySql Datenbank verwendet (was ist mit Interface gemeint)
 | 16.17  | Spiel gestartet und auf "Spin" geklickt (Darf nicht Bankrott sein)             | Konsonanten eingeben, welcher im Wort vorkommt        | Der Betrag, welcher beim "Spin" herauskam wurde dem Konto zugeschrieben                  |
 | 17.18  | Code vorhanden             | Manuell überprüfen, ob ein template verwendet wurde        | Template wurde verwendet                 |
 | 18.19  | Spiel gestartet oder Code vorhanden | Auf "Spin" klicken bis "Bankrot" erscheint oder im Code nach der Methode "Spin" suchen und überprüfen | Nach einigem Klicken erscheint "Bankrot" und das Spiel ist verloren oder es ist eine Wahrscheinlichkeit um zu verlieren in der Spin methode eingebaut |
-| A.17  |              |         |                   |
-| B.18  |              |         |                   |
-| C.19  |              |         |                   |
-| D.20  | Als Admin eingeloggt             | Auf "Inspect Phrases" klicken        | Tabelle mit allen Wörter und Phrasen und wie oft sie nicht erraten wurden                  |
+| A.20  |              |         |                   |
+| B.21  |              |         |                   |
+| C.22  |              |         |                   |
+| D.23  | Als Admin eingeloggt             | Auf "Inspect Phrases" klicken        | Tabelle mit allen Wörter und Phrasen und wie oft sie nicht erraten wurden                  |
 
 ✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, die der Testfall abdeckt, und `m` von `1` an nach oben gezählt. Beispiel: Der dritte Testfall, der die zweite User Story abdeckt, hat also die Nummer `2.3`.
 
