@@ -51,7 +51,7 @@ Es wird eine MySql Datenbank verwendet (was ist mit Interface gemeint)
 | 2    | Muss                | Funktional     | Als Administrator möchte ich Phrasen und Rätselwörter anlegen, ändern und löschen können, damit ich das Angebot an Rätseln und Fragen ändern kann.                                   |
 | 3    | Muss                | Funktional     | Als Administrator möchte ich Kategorien anlegen und jedes Wort bzw. jede Frage einer Kategorie zuordnen können, damit ich die Rätsel und Fragen verwalten kann und der Nutzer weis, um was es geht                                   |
 | 4    | Muss                | Randbedingung     | Als Client dient ein Webbrowser. |
-| 5    | Muss                | Funktional     | Als Kandidat möchte ich meinen Namen eingeben und auf der Highscore-Liste erscheinen können, damit ich meine Leistungen mit anderen teilen kann.                                   |
+| 5    | Muss                | Funktional     | Als Kandidat möchte ich meinen Namen eingeben, damit ich auf der Highscsoreliste erscheinen kann und meine Leistungen mit anderen teilen kann.                                   |
 | 6    | Muss                | Funktional     | Als Kandidat möchte ich jederzeit meinen Kontostand sehen können, damit ich den Fortschritt des Spiels verfolgen kann.                                   |
 | 7    | Muss                | Funktional     | Als Kandidat möchte ich jederzeit meinen Lebenspunkte sehen können, damit ich den Fortschritt des Spiels verfolgen kann.                                   |
 | 8    | Muss                | Funktional     | Als Kandidat möchte ich erfahren, ob meine Antwort richtig oder falsch war, damit ich mein Wissen verbessern kann und beim nächste Mal besser bin.                                   |
