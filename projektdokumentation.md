@@ -97,9 +97,7 @@ Es wird eine MySql Datenbank verwendet (was ist mit Interface gemeint)
 | A.20  |              |         |                   |
 | B.21  |              |         |                   |
 | C.22  |              |         |                   |
-| D.23  | Als Admin eingeloggt             | Auf "Inspect Phrases" klicken        | Tabelle mit allen Wörter und Phrasen und wie oft sie nicht erraten wurden                  |
-
-✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, die der Testfall abdeckt, und `m` von `1` an nach oben gezählt. Beispiel: Der dritte Testfall, der die zweite User Story abdeckt, hat also die Nummer `2.3`.
+| D.23  | Als Admin eingeloggt             | Auf "Phrasen" klicken        | Tabelle mit allen Wörter und Phrasen und wie oft sie nicht erraten wurden                  |
 
 # 5 Prototyp
 
