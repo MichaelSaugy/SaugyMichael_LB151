@@ -63,7 +63,8 @@ Es wird eine MySql Datenbank verwendet (was ist mit Interface gemeint)
 | 14   | Muss                | Qualität     | Als Administrator möchte ich, dass das Spiel mit genügend Wörter und Phrasen gefüllt ist, damit der Kandidat Spass hat                                   |
 | 15   | Muss                | Funktional     | Als Kandidat möchte ich, dass die Runden gezählt werden, damit ich weis in welcher Runde ich mich befinde.                                   |
 | 16   | Muss                | Funktional     | Als Kandidat möchte ich durch Raten eines Konsonanten den Betrag gewinnen, damit ich einen Gewinn erzielen kann                                   |
-| 17   | Muss                | Randbedingung     | Als Entwickler möchte ein Layout verwendet wird, damit ich nicht den gleichen Code mehrmals verwenden muss.                                   |
+| 17   | Muss                | Randbedingung     | Als Template möchte ein Layout verwendet wird, damit ich nicht den gleichen Code mehrmals verwenden muss.                                   |
+| 17   | Muss                | Funktional     | Als Kandidat möchte, dass beim Drehen eine Wahrscheinlichkeit besteht, bankrott zu gehen, damit das Spiel interessant bleibt.                                   |
 | A   | Kann                | Funktional     | Als Kandidat möchte ich, die Schwierigkeit der Wörter/Phrasen ändern können, damit ich auf einem mir angemessenen Niveau spielen kann.                                   |
 | B   | Kann                | Funktional     | Als Kandidat möchte ich eine Hilfe-Funktion haben, die mir ermöglicht, Hinweise oder Tipps zu einer Frage oder einem Rätsel zu erhalten, damit ich das Rätsel besser lösen kann. |
 | C   | Kann                | Funktional     | Als Kandidat möchte ich eine Funktion haben, um ein Rätsel zu melden, falls ich denke, dass es sich um einen Schreibfehler handelt, damit ich dazu beitragen kann, die Qualität der Rätsel zu verbessern. |
