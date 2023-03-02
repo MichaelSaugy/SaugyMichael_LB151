@@ -80,7 +80,7 @@ Es wird eine MySql Datenbank verwendet (was ist mit Interface gemeint)
 | 3.3  | Als Admin einloggen             | Kategorie hinzufügen        | Kategorie wird der DB hinzugefügt                  |
 | 3.4  | Kategorie erstellen             | Kategorie einem Rätsel hinzufügen        | In der DB ersichtliche Verbindung von Rätsel und Kategorie                  |
 | 4.5  |              |         |                   |
-| 5.6  | Seite aufrufen             | "Test" als Namen eingeben und das Spiel spielen        | Am Ende wird der Kontostand gemeinsam mit dem Namen gespeichert                   |
+| 5.6  | Seite aufrufen             | "Test" als Namen eingeben und das Spiel spielen        | Name ist hinter "Spieler:" ersichtlich                   |
 | 6.7  | Seite aufrufen             | "Test" als Namen eingeben und das Spiel starten         | Oben rechts sind die Lebenspunkte ersichtlich                  |
 | 7.8  | Seite aufrufen             | "Test" als Namen eingeben und das Spiel starten         | Oben rechts ist der Kontostand ersichtlich                  |
 | 8.9  | Seite aufrugen und Spiel mit beliebigem Namen starten             | 1. Rätsel falsch beantowrten und das 2. richtig        | 1. Rätsel wird korrigiert                  |
