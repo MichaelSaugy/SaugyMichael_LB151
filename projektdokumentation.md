@@ -7,37 +7,28 @@ Saugy
 | 12.01.2023      | 0.0.1   | Erstellen und Ausfüllen der Dokumentation bis Punkt 4.1 |
 | 16.01.2023      | 0.0.2   | Überarbeiten der Punkte bis 4.1 und ausfüllen der Dokumentation bis 5 |
 | 22.02.2023      | 0.0.3   | Dokumentation überarbeitet und fertigstellen der Testfälle                                                             |
-|       | 0.0.4   |                                                              |
-|       | 0.0.5   |                                                              |
-|       | 0.0.6   |                                                              |
-|       | 1.0.0   |                                                              |
+| 02.03.2023      | 0.0.4   | Dokumentation überarbeitet und vollendet                                                             |
 
 # 0 Ihr Projekt
 
 ✍️ Beschreiben Sie Ihr Projekt in einem griffigen Satz.
 
-Ein Quiz, bei welchem man ein Wort oder ein Satz erraten muss.
+Ein Quiz, bei welchem man ein Wort oder ein Satz erraten muss, um einen Gewinn zu erzielen.
 
 # 1 Analyse
 
 ✍️ Beschreiben Sie, auf welchem Tier Sie die dynamischen Elemente der Anwendung unterbringen möchten:
 
-* Tier 1 (Presentation): Website (Glücksrad Eingabefelder)
-* Tier 2 (Webserver): Daten überprüfen
-* Tier 3 (Application Server): Prüfung der Buchstaben 
-* Tier 4 (Dataserver): Adminlogin, Highscore Liste, Rätsel-wörter/-phrases
+* Tier 1 (Presentation): Webseite (Glücksrad Eingabefelder), JSF
+* Tier 2 (Webserver): Daten von den Eingabefeldern empfangen und überprüfen, JSF
+* Tier 3 (Application Server): Prüfung der Buchstaben und das AdminLogin 
+* Tier 4 (Dataserver): Highscore Liste, Rätsel-wörter/-phrases in mySQL
 
 # 2 Technologie
-
-✍️ Beschreiben Sie für dieselben Tiers, welche Programmiersprache bzw. Technologie Sie verwenden möchten.
-
-JSF & MySql, da wir mit diese im Unterricht behandeln
+Ich habe mich für JSF und mySQL entschieden, da wir diese im Unterricht bereits behandelt haben. Ausserdem hat unsere Lehrperson ebenfalls mit JSF und mySQL gearbeitet, dadurch kann ich mir besser Hilfe holen, falls ich diese benötige
 
 # 3 Datenbank
-
-✍️ Wie steuern Sie Ihre Datenbank an? Wie ist das Interface aufgebaut? 
-
-Es wird eine MySql Datenbank verwendet (was ist mit Interface gemeint)
+Ich habe eine mySQL Datenbank verwendet. Diese habe ich mit phpMyAdmin erstell. Um die Datenbank mit dem Programm zu verknüpfen habe ich JPA verwendet.
 
 # 4.1 User Stories
 
@@ -65,6 +56,7 @@ Es wird eine MySql Datenbank verwendet (was ist mit Interface gemeint)
 | B   | Kann                | Funktional     | Als Kandidat möchte ich eine Hilfe-Funktion haben, die mir ermöglicht, Hinweise oder Tipps zu einer Frage oder einem Rätsel zu erhalten, damit ich das Rätsel besser lösen kann. |
 | C   | Kann                | Funktional     | Als Kandidat möchte ich eine Funktion haben, um ein Rätsel zu melden, falls ich denke, dass es sich um einen Schreibfehler handelt, damit ich dazu beitragen kann, die Qualität der Rätsel zu verbessern. |
 | D   | Muss                | Funktional     | Als Administrator möchte ich eine Funktion haben um die Statistiken der einzelnen Rätsel anzuzeigen, damit ich erfahre welche Rätsel besonders schwer oder leicht sind und anpassen kann. |
+| 19   | Muss                | Funktional     | Als Kandidat möchte ich, dass mir angezeigt wird, sobald ich alle Konsonanten erraten habe, damit ich keine unnötigen Lebenspunkte verschwende.                                   |
 
 
 # 4.2 Testfälle
@@ -93,7 +85,8 @@ Es wird eine MySql Datenbank verwendet (was ist mit Interface gemeint)
 | A.20  |              |         |                   |
 | B.21  |              |         |                   |
 | C.22  |              |         |                   |
-| D.23  | Als Admin eingeloggt             | Auf "Phrasen" klicken        | Tabelle mit allen Wörter und Phrasen und wie oft sie nicht erraten wurden                  |
+| D.23  | Als Admin eingeloggt             | Auf "Phrasen" klicken        | Tabelle mit allen Wörter und Phrasen und wie oft sie nicht erraten wurden                |
+| 19.24  | Spiel gestartet | Alle Konsonanten der Phrase erraten | Meldung escheint, um den Nutzer zu informieren.                |
 
 # 5 Prototyp
 
@@ -142,6 +135,7 @@ Admin Interface:
 | B    | nein      | Keine Zeit - Kann-Anforderung                                          |
 | C    | nein      | Keine Zeit - Kann-Anforderung                                          |
 | D    | ja        | In QuizBean.java auf Zeile 284 wird die Variable "timesFailed" beim Verlieren aktualisiert (DBConnection.java Zeile 114 Methode "updateTimesFailed")                                          |
+| 19    | ja      | QuizBean.java Zeile 215                                          |
 
 # 8 Testprotokoll
 
