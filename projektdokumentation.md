@@ -112,8 +112,8 @@ Es wird eine MySql Datenbank verwendet (was ist mit Interface gemeint)
 | 2,3,4,6,7,13        | 13.02.2023      |              |
 | 5,8,16              | 21.02.2023      |              |
 | 9,10,11             | 22.02.2023      |              |
-| 14                  | 23.20.2023      | DB befüllt             |
-| ...        |       |              |
+| 14                  | 23.20.2023      | DB befüllt               |
+| 1                   | 01.03.2023      | Admin Login hinzugefügt  |
 | ...        |       |              |
 
 # 7 Projektdokumentation
@@ -121,13 +121,13 @@ Es wird eine MySql Datenbank verwendet (was ist mit Interface gemeint)
 | US-№ | Erledigt? | Entsprechende Code-Dateien oder Erklärung |
 | ---- | --------- | ----------------------------------------- |
 | 1    | ja        | "adminLogin.xhtml" ist das Formular, der Code befindet sich in der Datei "AdminBean.java"                                          |
-| 2    | ja        | Befindet sich in den automatisch generierten Dateien Create.xhtml, Edit.xhtml, List,xhtml View.xhtml im Ordner games. Dazu werden die Dateien Games.java, GamesController.java. GamesFacade.java verwendet. Diese sind ebenfalls automatisch generiert.                                         |
-| 3    | ja        |                                           |
-| 4    | ja        |                                           |
-| 5    | ja        |                                           |
-| 6    | ja        |                                           |
-| 7    | ja        |                                           |
-| 8    | ja        |                                           |
+| 2    | ja        | Befindet sich in den automatisch generierten Dateien Create.xhtml, Edit.xhtml, List,xhtml View.xhtml im Ordner "games". Dazu werden die Dateien Games.java, GamesController.java. GamesFacade.java verwendet. Diese sind ebenfalls automatisch generiert.                                         |
+| 3    | ja        | Durch die Automatisch generierten Dateien: Create.xhtml, Edit.xhtml, List,xhtml View.xhtml im Ordner "phrases" und "difficulty". AUsserdem werden die Dateien Difficulty.java, DifficultyController.java, DifficultyFacade, Phrases.java, PhrasesController.java und PhrasesFacade.java verwendet |
+| 4    | ja        | ----------                                          |
+| 5    | ja        | Auf der Seite index.xhtml wird der Name eingegeben, dieser wird dann in der Datei "QuizBean.java" gespeichert. |
+| 6    | ja        | Auf der Seite mainQuiz.xhtml auf Zeile 56 befindet sich das Label mit der Anzeige des Kontostands. |
+| 7    | ja        | Auf der Seite mainQuiz.xhtml auf Zeile 57 befindet sich das Label mit der Anzeige der Lebenspunkte. |
+| 8    | ja        | --------                                          |
 | 9    | ja        |                                           |
 | 10   | ja        |                                           |
 | 11   | ja        |                                           |
