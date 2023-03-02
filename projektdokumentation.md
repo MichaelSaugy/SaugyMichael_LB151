@@ -5,8 +5,8 @@ Saugy
 | Datum | Version | Zusammenfassung                                              |
 | ----- | ------- | ------------------------------------------------------------ |
 | 12.01.2023      | 0.0.1   | Erstellen und Ausfüllen der Dokumentation bis Punkt 4.1 |
-| 16.01.2023      | 0.0.2   | Überarbeiten der Punkte bis 4.1 und ausfüllen der Dokumentation bis 5 |
-| 22.02.2023      | 0.0.3   | Dokumentation überarbeitet und fertigstellen der Testfälle                                                             |
+| 16.01.2023      | 0.0.2   | Überarbeiten der Punkte bis 4.1 und Ausfüllen der Dokumentation bis 5 |
+| 22.02.2023      | 0.0.3   | Dokumentation überarbeitet und Fertigstellen der Testfälle                                                             |
 | 02.03.2023      | 0.0.4   | Dokumentation überarbeitet und vollendet                                                             |
 
 # 0 Ihr Projekt
