@@ -98,12 +98,12 @@ Admin Interface:
 
 | User Story | Datum | Beschreibung |
 | ---------- | ----- | ------------ |
-| 2,3,4,6,7,13        | 13.02.2023      | Aufbau              |
-| 5,8,16              | 21.02.2023      |              |
-| 9,10,11             | 22.02.2023      |              |
-| 14                  | 23.20.2023      | DB befüllt               |
-| 1,12,14,15,d        | 01.03.2023      | Admin Login hinzugefügt  |
-| 17, 18, 19, 24    | 02.03.2023      |   |
+| 2,3,4,6,7,13        | 13.02.2023      | Aufbau                       |
+| 5,8,16              | 21.02.2023      | Grid für die Lösung erstellt |
+| 9,10,11             | 22.02.2023      | Gewinn und Lebenspunkte      |
+| 14                  | 23.20.2023      | DB befüllt                   |
+| 1,12,14,15          | 01.03.2023      | Admin Login hinzugefügt      |
+| 17, 18, 19, 24,d    | 02.03.2023      | Programm fertiggestellt      |
 
 # 7 Projektdokumentation
 
@@ -168,5 +168,5 @@ Folgende Testfälle sind im Video nicht ersichtlich: 4.4, 12.13, 14.15, 17.18, 1
 | 19.24  | 02.03.2023       | Ok          | Michael Saugy        |
 
 
-Alle bis auf 1 Muss-Anfoderungen wurden erfüllt. Das Programm kann trotz allem Problemlos genutzt werden.
+Alle bis auf 1 Muss-Anfoderungen wurden erfüllt. Das Programm kann trotzdem problemlos genutzt werden.
 
