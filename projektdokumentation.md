@@ -60,9 +60,9 @@ Es wird eine MySql Datenbank verwendet (was ist mit Interface gemeint)
 | 11   | Muss                |      | Als Kandidat möchte ich, dass die Rangliste nach der höhe des Geldbetrags sortiert wird, damit ich eine bessere übersicht habe.                                    |
 | 12   | Muss                |      | Als Kandidat (Admin?) möchte ich jedes Rätsel-Wort oder Phrase nur einmal erhalten, damit das Spiel spannend bleibt.                                    |
 | 13   | Muss                |      | Als Kandidat möchte ich das Glücksrad drehen können, damit ich um einen Betrag spielen kann ---------- |
-| 14   | Muss                |      | Als Administrator möchte ich das das Spiel mit genügend Wörter und Phrasen gefüllt ist, damit der Kandidat Spass hat                                   |
+| 14   | Muss                |      | Als Administrator möchte ich, dass das Spiel mit genügend Wörter und Phrasen gefüllt ist, damit der Kandidat Spass hat                                   |
 | 15   | Muss                |      | Als Kandidat möchte ich, dass die Runden gezählt werden, damit ich weis in welcher Runde ich mich befinde.                                   |
-| 16   | Muss                |      | Als Kandiddat möchte ich durch Raten eines KOnsonanten den Betrag gewinnen, damit ich einen Gewinn erzielen kann                                   |
+| 16   | Muss                |      | Als Kandiddat möchte ich durch Raten eines Konsonanten den Betrag gewinnen, damit ich einen Gewinn erzielen kann                                   |
 | A   | Kann                |      | Als Kandidat möchte ich, die Schwierigkeit der Wörter/Phrasen ändern können, damit ich auf einem mir angemessenen Niveau spielen kann.                                   |
 | B   | Kann                |      | Als Kandidat möchte ich eine Hilfe-Funktion haben, die mir ermöglicht, Hinweise oder Tipps zu einer Frage oder einem Rätsel zu erhalten, damit ich das Rätsel besser lösen kann. |
 | C   | Kann                |      | Als Kandidat möchte ich eine Funktion haben, um ein Rätsel zu melden, falls ich denke, dass es sich um einen Schreibfehler handelt, damit ich dazu beitragen kann, die Qualität der Rätsel zu verbessern. |
@@ -134,17 +134,18 @@ Admin Interface:
 | 6    | ja        | Auf der Seite mainQuiz.xhtml auf Zeile 56 befindet sich das Label mit der Anzeige des Kontostands. |
 | 7    | ja        | Auf der Seite mainQuiz.xhtml auf Zeile 57 befindet sich das Label mit der Anzeige der Lebenspunkte. |
 | 8    | ja        | --------                                          |
-| 9    | ja        |                                           |
-| 10   | ja        |                                           |
-| 11   | ja        |                                           |
-| 12   | ja        |                                           |
-| 13   | ja        |                                           |
-| 14   | ja        |                                           |
-| 15   | ja        |                                           |
-| A    | nein      |                                           |
-| B    | nein      |                                           |
-| C    | nein      |                                           |
-| D    | ja        |                                           |
+| 9    | ja        | QuizBean.java Zeile 321 Methode "saveGame" and DBConnection.java Zeile 50 Methode "saveToDB".                                          |
+| 10   | ja        | mainQuiz.xhtml Zeile 59.                                          |
+| 11   | ja        | DBConnection.java Zeile 87 Methode "getLeaderboard".                                          |
+| 12   | nein      | Keine Zeit.                                          |
+| 13   | ja        | mainQuiz.xhtml Zeile 32 und QuizBean.java Zeile 131 Methode "Spin".                                          |
+| 14   | ja        | In der Datenbank oder im Skript quizm151.sql auf Zeile 106.                                          |
+| 15   | ja        | In QuizBean.java auf Zeile 294 wird dieser erhöht, auf Zeile 295 wird dieser beim Velieren auf 1 gesetzt und auf Zeile 327 wird dieser bei einem Neustart auf 1 gesetzt.                                          |
+| 16   | ja        | In QuizBean.java auf Zeile 206 in der Methode "guess".                                          |
+| A    | nein      | Keine Zeit - Kann-Anforderung                                          |
+| B    | nein      | Keine Zeit - Kann-Anforderung                                          |
+| C    | nein      | Keine Zeit - Kann-Anforderung                                          |
+| D    | ja        | In QuizBean.java auf Zeile 284 wird die Variable "timesFailed" beim Verlieren aktualisiert (DBConnection.java Zeile 114 Methode "updateTimesFailed")                                          |
 
 # 8 Testprotokoll
 
